@@ -58,7 +58,36 @@ header {
 }
 
 .product-detail {
+  /* text-align: center;*/
+  /* padding: 20px; */
   text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;  /* Center the content */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.product-detail img {
+  width: 100%;         /* Responsive size */
+  max-width: 400px;    /* Prevent the image from getting too large */
+  height: auto;        /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  border-radius: 8px;  /* Optional: Rounded corners */
+}
+
+/* Product Details Text */
+.product-detail h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-detail p {
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 /* Product List */
@@ -86,6 +115,12 @@ header {
 
 .product-item p {
   font-size: 1em;
+}
+
+.product-images {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
 }
 
 .button-container {
@@ -153,6 +188,52 @@ header {
 }
 
 
+/* Login container */
+.login-container {
+  width: 350px;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form styles */
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #022674;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #0140c1;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .header-container {
@@ -200,6 +281,8 @@ header {
     align-items: flex-start; 
     margin-bottom: 15px; /* Space between items */
   }
+
+  
 
   .cart-item button {
     width: 100%; /* Make cart item buttons take full width */
